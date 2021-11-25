@@ -24,11 +24,15 @@
         </div>
         <div class="wrap">
             <div class="desperta">
-                DESPERTADOR:<br /><br /> 
-                hora: <input type="text" id="hora"> 
-                minuto: <input type="text" id="minuto">
-                <button>OK!</button>
+                <label for="hora">Hora:</label> <input type="text" id="hora">
+                <br>
+                <label for="hora">Minuto:</label><input type="text" id="minuto">
+                <br>
             </div>
+            <div class="btn">
+                <button id="btn">OK!</button>
+            </div>
+
         </div>
     </section>
 
