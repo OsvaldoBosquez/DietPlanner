@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../images/bg-plans.jpg") no-repeat fixed center center;
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1920px;
+}
+.main{
+    margin: auto;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    margin-top: 30px;
+}
+.btnTop{
+    background: rgba($color: #ffce00, $alpha: 0.8);
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 100%;
+    margin-right: 30px;
+}

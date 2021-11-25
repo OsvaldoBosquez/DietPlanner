@@ -1,0 +1,55 @@
+.main{
+    display: flex;
+    justify-content: end;
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-right: 200px;
+        width: 850px;
+        .banner-top{
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            width: 80%;
+        }
+        .container-message{
+            margin-top: 40px;
+            width: 75%;
+            margin-left: 150px;
+            text-align: end;
+            .message{
+                line-height: 50px;
+                font-weight: 600;
+                .italic{
+                    font-family: "Satisfy", cursive;
+                    font-size: 2rem;
+                    color: #004D8B;
+                }
+            }
+        }
+    } 
+}
+.btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+    width: 90%;
+    .btn-principal{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        width: 350px;
+        background: #004D8B;
+        color: #fff;
+    }
+}
+@media screen and (max-width:1600px) {
+    .main{
+        .container{
+            margin-right: 0px;
+        }
+    }    
+}

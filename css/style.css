@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../images/bg-cover.jpg") no-repeat;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1920px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+header .index a {
+  font-family: "Satisfy", cursive;
+  font-size: 4rem;
+  margin-left: 300px;
+  color: #004d8b;
+  text-decoration: none;
+}
+
+header nav {
+  margin-right: 100px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #004d8b;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  color: #f61f21;
+  border-bottom: 2px solid;
+  padding-bottom: 0px;
+  text-decoration: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+  margin-right: 200px;
+  width: 850px;
+}
+
+.main .container .banner-top {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  width: 80%;
+}
+
+.main .container .container-message {
+  margin-top: 40px;
+  width: 75%;
+  margin-left: 150px;
+  text-align: end;
+}
+
+.main .container .container-message .message {
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.main .container .container-message .message .italic {
+  font-family: "Satisfy", cursive;
+  font-size: 2rem;
+  color: #004D8B;
+}
+
+.btn {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 90%;
+}
+
+.btn .btn-principal {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 350px;
+  background: #004D8B;
+  color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  .main .container {
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
