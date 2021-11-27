@@ -1,4 +1,7 @@
-<?php include 'header.php';?>
+<?php
+include 'header.php';
+require_once "php/private/autoloader.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DietPlanner</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;600&family=Satisfy&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;600&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +21,7 @@
                 Comer es una necesidad, hacerlo de forma inteligente es un arte
             </div>
             <div class="container-message">
-                <p class="message" >
+                <p class="message">
                     Asume el control de tus objetivos.
                     Lleva un registro de todos tus planes, recetas y tiempos
                     con la mejor platafprma para los nutriologos y sus pacientes.
@@ -32,7 +33,7 @@
     <div class="btn">
         <button class="btn-principal">Empezar</button>
     </div>
-    
+
 </body>
 
 </html>

@@ -120,6 +120,10 @@ header {
 .login-space .group .button {
     background: #004d8b
 }
+.login-space .group .button:hover {
+    opacity: 0.9;
+    border: 1px solid #000;
+}
 
 .login-space .group label .icon {
     width: 15px;
