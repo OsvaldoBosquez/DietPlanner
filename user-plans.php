@@ -1,4 +1,8 @@
-<?php include 'header2.php' ?>
+<?php 
+include 'header2.php';
+require_once "php/private/autoloader.php";
+require_once "php/private/validate-logged.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 

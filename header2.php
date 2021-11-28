@@ -12,7 +12,7 @@
 <body>
 <header>
         <div class="index">
-            <a href="index.php">DietPlanner</a>
+            <a href="user.php">DietPlanner</a>
         </div>
         <div id="menu">
         <div class="hamburger">
@@ -27,7 +27,7 @@
                 <li><a href="user-alerts.php">Alertas</a></li>
                 <li><a href="user-reminders.php">Recordatorios</a></li>
                 <hr>
-                <li><a href="#">Cerrar Sesion</a></li>
+                <li><a href="index.php">Cerrar Sesion</a></li>
             </ul>
         </div>
 

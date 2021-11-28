@@ -1,3 +1,7 @@
+<?php
+require_once "php/private/autoloader.php";
+require_once "php/private/validate-logged.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +19,7 @@
 <body>
     <header>
         <div class="index">
-            <a href="index.php">DietPlanner</a>
+            <a href="#">DietPlanner</a>
         </div>
         <div id="menu">
         <div class="hamburger">
@@ -30,7 +34,7 @@
                 <li><a href="user-alerts.php">Alertas</a></li>
                 <li><a href="user-reminders.php">Recordatorios</a></li>
                 <hr>
-                <li><a href="#">Cerrar Sesion</a></li>
+                <li><a href="index.php" id="btn-logOut">Cerrar Sesion</a></li>
             </ul>
         </div>
 
@@ -51,5 +55,4 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/menu.js"></script>
-
 </html>

@@ -18,7 +18,7 @@
         <nav>
             <ul>
                 <li><a href="login.php">Iniciar Sesión</a></li>
-                <li><a href="user.php">Registrame</a></li>
+                <li><a href="login.php">Registrame</a></li>
             </ul>
         </nav>
     </header>
