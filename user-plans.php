@@ -2,6 +2,8 @@
 include 'header2.php';
 require_once "php/private/autoloader.php";
 require_once "php/private/validate-logged.php";
+$id_user = $_SESSION['id_user'];
+$id_menu = $_GET['id_menu'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,9 +51,12 @@ require_once "scripts.php";
 <script src="js/menu.js"></script>
 
 <script>
+  var id_user = "<?php echo json_decode($id_user) ?>";
+  var $id_menu = "<?php echo json_decode($id_menu) ?>";
   (function(){
     var ar = {
-      id_menu: 1
+      id_menu: $id_menu,
+      id_user: id_user
     }
     $.post("php/plans/load-plans.php",{
       data: JSON.stringify(ar)
@@ -103,8 +108,7 @@ require_once "scripts.php";
     $(colacion1_td).text(colacion1);
     $(comida_td).text(comida);
     $(colacion2_td).text(colacion2);
-    $(cena_td).text(cena);
-      
+    $(cena_td).text(cena); 
   }
 </script>
 

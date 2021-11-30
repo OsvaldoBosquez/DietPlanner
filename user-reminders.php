@@ -33,11 +33,6 @@ $id_user = $_SESSION['id_user'];
             <div class="wrap">
                 <div class="table-responsive">
                     <table class="table align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" class="w-16">Recordatorio</th>
-                            </tr>
-                        </thead>
                         <tbody id="lista">
                         </tbody>
                     </table>

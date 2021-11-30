@@ -30,7 +30,7 @@ require_once "php/private/validate-logged.php";
         <div class="menu-inner">
 
             <ul>
-            <li><a href="user-plans.php">Planes</a></li>
+            <li><a href="user-menus.php">Planes</a></li>
                 <li><a href="user-alerts.php">Alertas</a></li>
                 <li><a href="user-reminders.php">Recordatorios</a></li>
                 <hr>
