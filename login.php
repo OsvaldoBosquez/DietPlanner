@@ -1,3 +1,6 @@
+<?php
+require_once "php/private/autoloader.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/logInStyle.css">
     <title>Document</title>
 </head>
@@ -48,10 +51,11 @@
     </div>
 </body>
 <?php
-    require_once "scripts.php";
+require_once "scripts.php";
 ?>
 <script>
     function validarLogin() {
+
         var ar = {
             user: $("#user").val(),
             password: $("#password").val()
@@ -61,17 +65,19 @@
                 data: JSON.stringify(ar)
             },
             function(data) {
+                //console.log(data);
                 toastr.options.closeButton = true;
                 if (data == -1) {
                     toastr.error("Hubo un error");
                 } else if (data == 1) {
-                    location.href = "user.php";
+                    location.href = "red.php";
                 } else if (data == -2) {
                     toastr.warning("Usuario o contraseña incorrectos");
                 }
             }
         );
     }
+
     $("#btn-login").click(validarLogin);
 
     function createUser() {
@@ -80,7 +86,7 @@
             password: $("#passwordSingUp").val()
         };
         console.log(ar);
-          $.post(
+        $.post(
             "php/users/create-user.php", {
                 data: JSON.stringify(ar)
             },
@@ -94,7 +100,7 @@
                     toastr.error("Hubo un error.");
                 }
             }
-        ); 
+        );
     }
     $("#btn-singUp").click(createUser);
 </script>

@@ -27,14 +27,23 @@ $id_user = $_SESSION['id_user'];
                         <th scope="col" class="w-16">Menus</th>
                     </tr>
                 </thead>
-                
-                    <table class="table align-middle">
-                        <tbody id="lista">
-                        </tbody>
-                    </table>
 
+                <table class="table align-middle">
+                    <tbody id="lista">
+                    </tbody>
+                </table>
             </table>
         </div>
+        <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="R5Q2LUGE5Q2SL">
+            <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+        </form> -->
+
+
+
+
     </section>
 
 </body>
@@ -45,6 +54,9 @@ require_once "scripts.php";
 
 <script>
     var id_user = "<?php echo json_decode($id_user) ?>";
+    $(document).ready(function(){
+        updatePay();
+    });
     (function() {
         var ar = {
             id_menu: id_user
@@ -87,8 +99,28 @@ require_once "scripts.php";
     }
     $("#lista").on("dblclick", ".row_menu", function() {
         var id = $(this).children(".id_menu").html();
-            window.location.href = "user-plans.php?id_menu="+id;
+        window.location.href = "user-plans.php?id_menu=" + id;
     });
+
+    function updatePay() {
+        var ar = {
+            id_user: id_user
+        }
+        $.post("php/users/changePay1.php", {
+                data: JSON.stringify(ar)
+            },
+            function(data) {
+                //console.log(data);
+                ret = JSON.parse(data);
+                //console.log(ret);
+                if (data == 1) {
+                    console.log("jalo");
+                } else{
+                    console.log("no jalo");
+                }
+                    
+            });
+    }
 </script>
 
 </html>
